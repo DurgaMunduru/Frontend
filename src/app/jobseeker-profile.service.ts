@@ -25,16 +25,16 @@ export class JobseekerProfileService {
   }
 
   updateProfileByfirstname(firstname:string,profile:JobseekerProfile):Observable<Object>{
-    return this.httpClient.put(`${this.baseURL}/${/updateprofile/firstname}}`,profile);
+    return this.httpClient.put(`${this.baseURL}/updateprofile/${firstname}`,profile);
   }
 
   /*getUserAppiledJobs(email:string):Observable<JobseekerProfile>{
     return this.httpClient.get<JobseekerProfile>(`${this.baseURL}/${email}`);
   }*/
 
-  /*getUserByEmail(email:string):Observable<JobseekerProfile>{
-    return this.httpClient.get<JobseekerProfile>(`${this.baseURL}/${email}`);
-  }*/
+  getUserByEmail(email:string):Observable<JobseekerProfile>{
+    return this.httpClient.get<JobseekerProfile>(`${this.baseURL}/user/${email}`);
+  }
 
   getAllProfiles():Observable<JobseekerProfile[]>{
     return this.httpClient.get<JobseekerProfile[]>(`${this.baseURL}/showallprofiles`);

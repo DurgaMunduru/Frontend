@@ -23,21 +23,20 @@ export class CreateJobseekerprofileComponent implements OnInit {
   saveProfile(){
     this.jobseekerprofileservice.createJobSeekerProfile(this.profile).subscribe(data=>{
       console.log(data);
-      this.gotoProfileslist()
     },
-    error => console.log(error)
+    error=>console.log(error)
     );
   }
+    
 
-
-  gotoProfileslist(){
+  goToJobseekerProfiles(){
     this.router.navigate(['/jobseekerprofiles'])
   }
 
 
   onSubmit(){
     console.log(this.profile);
-    this.saveProfile;
+    this.saveProfile();
   }
 
 

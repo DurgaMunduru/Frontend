@@ -1,0 +1,24 @@
+form{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+input{
+    all: unset;
+    font: 16px;
+    height: 100%;
+    padding: 6px 10px;
+    background-color: rgb(154,154, 255);
+
+}
+::placeholder{
+    color: #fff;
+}
+button{
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    margin-top: 20px;
+}

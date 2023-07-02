@@ -27,12 +27,12 @@ private getAllProfiles(){
     );
 }
 
-updateJobseekerProfile(id:number){
-  this.router.navigate(['update-jobseekerprofile',id]);
+updateJobseekerProfile(firstname:string){
+  this.router.navigate(['update-jobseekerprofile',firstname]);
 }
 
-jobseekerdetails(id:number){
-  this.router.navigate(['jobseeker-details',id]);
+jobseekerdetails(firstname:string){
+  this.router.navigate(['jobseeker-details',firstname]);
 }
 
 
